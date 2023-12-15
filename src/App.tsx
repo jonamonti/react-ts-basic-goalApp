@@ -23,6 +23,7 @@ function App() {
     const newGoalsList: CourseGoalT[] = goals.filter((el) => el.id !== id)
     setGoals(newGoalsList)
   }
+  console.log(goals)
 
   return (
     <main>

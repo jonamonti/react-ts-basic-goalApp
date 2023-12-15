@@ -20,3 +20,13 @@ export type HeaderT = {
 export type NewGoalT = {
   onAddGoal: (goal: string, summary: string) => void
 }
+
+export type HintModeBox = {
+  mode: 'hint'
+}
+
+export type WarningModeBox = {
+  mode: 'warning'
+  severity: 'low' | 'medium' | 'high'
+}
+export type InfoBoxT = HintModeBox | WarningModeBox
